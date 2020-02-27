@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;}
+
+
+</style>
+</head>
+<body>
+
+<h2>Tabs</h2>
+<p>Click on the buttons inside the tabbed menu:</p>
+
+<div class="openpage-header-tab">
+  <button class="box5tablinks" onclick="openPage(event, 'page1')" id="defaultOpenpage1">Trang 1</button>
+  <button class="box5tablinks" onclick="openPage(event, 'page2')">Trang 2</button>
+  <button class="box5tablinks" onclick="openPage(event, 'page3')">Trang 3</button>
+  <button class="box5tablinks" onclick="openPage(event, 'page4')">Trang 4</button>
+  <button class="box5tablinks" onclick="openPage(event, 'page5')">Trang 5</button>
+</div>
+<div class="cover-openpage-content">
+  <div id="page1" class="box5tabcontent">
+    <h3>London</h3>
+    <p>London is the capital city of England.</p>
+    <img src="http://cava.vn/wp-content/uploads/2018/03/thaiminh1.jpg">
+  </div>
+
+  <div id="page2" class="box5tabcontent">
+    <h3>Paris</h3>
+    <p>Paris is the capital of France.</p> 
+  </div>
+
+  <div id="page3" class="box5tabcontent">
+    <h3>Tokyo</h3>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+
+  <div id="page4" class="box5tabcontent">
+    <h3>Hà Nội</h3>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+</div>
+<script>
+function openPage(evt, pageName) {
+  var i, box5tabcontent, box5tablinks;
+  box5tabcontent = document.getElementsByClassName("box5tabcontent");
+  for (i = 0; i < box5tabcontent.length; i++) {
+    box5tabcontent[i].style.display = "none";
+  }
+  box5tablinks = document.getElementsByClassName("box5tablinks");
+  for (i = 0; i < box5tablinks.length; i++) {
+    box5tablinks[i].className = box5tablinks[i].className.replace(" box5active", "");
+  }
+  document.getElementById(pageName).style.display = "block";
+  evt.currentTarget.className += " box5active";
+}
+
+document.getElementById("defaultOpenpage1").click();
+</script>
+   
+</body>
+</html> 

@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+body {
+  font-family: "Lato", sans-serif;
+  background: #ffffff;
+}
+body h1 {
+  color: #000;
+  text-align: center;
+}
+
+ul#imageGallery {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  display: block;
+  max-width: 780px;
+  text-align: center;
+}
+ul#imageGallery li {
+  display: inline-block;
+  padding: 8px;
+  background: ghostwhite;
+  margin: 10px;
+}
+ul#imageGallery li a {
+  text-decoration: none;
+}
+ul#imageGallery li a img {
+  display: block;
+  width: 200px;
+}
+
+#overlay {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+#overlay .holder {
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+#overlay .holder img {
+  width: 100%;
+  max-width: 600px;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: block;
+}
+#overlay .holder p {
+  color: #ffffff;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
+  padding: 10px;
+}
+#overlay .holder .nav {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 14px;
+}
+#overlay .holder .nav a {
+  color: white;
+  opacity: 0.3;
+  -webkit-user-select: none;
+  cursor: pointer;
+}
+#overlay .holder .nav a:hover {
+  opacity: 1;
+}
+#overlay .holder .nav #next, #overlay .holder .nav #prev {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  padding: 10px;
+  width: 50%;
+  box-sizing: border-box;
+  font-size: 40px;
+}
+#overlay .holder .nav #next span, #overlay .holder .nav #prev span {
+  top: 50%;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  position: relative;
+}
+#overlay .holder .nav #next {
+  right: 0;
+  text-align: right;
+}
+#overlay .holder .nav #prev {
+  left: 0;
+  text-align: left;
+}
+#overlay .holder .nav #close {
+  right: 10px;
+  top: 0;
+  font-size: 30px;
+  opacity: 0.6;
+  z-index: 1000000;
+  position: absolute;
+  text-align: left;
+  box-sizing: border-box;
+}
+#overlay .holder .nav #close:hover {
+  opacity: 1;
+}

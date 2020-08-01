@@ -1,5 +1,5 @@
 <?php  
-
+	// Cho vào function của theme đang chạy
 	add_action( 'phpmailer_init', function( $phpmailer ) {
 	    if ( !is_object( $phpmailer ) )
 	    $phpmailer = (object) $phpmailer;

@@ -11,5 +11,6 @@
 	    $phpmailer->Password   = 'dikasolehngidckr';
 	    $phpmailer->SMTPSecure = 'TLS';
 	    $phpmailer->From       = 'trunggian06.web3b@gmail.com';
-	    $phpmailer->FromName   = 'Thiết kế web 3B - thietkeweb3b.com';
+		$phpmailer->FromName   = 'Thiết kế web 3B - thietkeweb3b.com';
+		
 	});

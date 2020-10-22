@@ -1,0 +1,71 @@
+@media screen and (min-width: 1169px) {
+	.deal-prod .deal-left .prod-detail,.deal-prod .deal-left .prod-detail > a{text-align:center}
+}
+@media (min-width: 320px) and (max-width:992px) {
+	.blog-body .blog-title{font-size:18px}
+	.blog-entry p.entry-day{font-size:32px}
+	.blog-entry p.entry-month{font-size:14px}
+	.mgb-30{margin-bottom:30px}
+	.navbar-brand{padding:0 15px}
+	.navbar-collapse.collapse{display:block!important;height:auto!important;padding-bottom:0;overflow:visible!important;border-top:0 none;box-shadow:none}
+	.navbar{z-index:10;height:70px;padding:13px 0 14px;border-radius:5px}
+	.bars-navigation{display:block;margin-right:15px;line-height:41px}
+	.menu-nav .search-form{padding:10px;display:block;position:relative}
+	.menu-nav #hidden-search{position:absolute;width:240px;right:0}
+	.menu-nav .submenu{padding:15px;background:rgba(76,76,76,0.7)}
+	.menu-nav .submenu .topnav li{padding:10px 0}
+	.menu-nav .submenu .topnav li em{
+		font-size: 26px;
+		float: right;
+		font-weight: 400;
+		margin-top: -9px;
+		color: #fff;
+		width: 20px;
+		text-align: center;
+		font-style: normal;
+	}
+	.menu-nav .submenu .topnav li em:hover{cursor:pointer}
+	.menu-nav .submenu .topnav li > a{color:#fff;font-size:14px;font-family:Arial;text-transform:uppercase}
+	.menu-nav .submenu .topnav ul.level0,.menu-nav .submenu .topnav ul.level1{padding-left:30px}
+	.breadc .pull-left span{font-size:18px}
+	.deal-prod .deal-left{margin:0 auto;float:none}
+
+}
+@media ( max-width: 600px) {
+	.tab-head li{margin:0 10px}
+	.tab-head:before{display:none}
+	.tab-head:after{display:none}
+
+	.product-tabs-title{background:none}
+	.tab-head li.active a,
+	.tab-head li a{
+		font-size: 18px;
+	}
+	.tab-head li:before {
+		content: "";
+		background: url(cross.png) no-repeat;
+		background-size: contain;
+		width: 15px;
+		height: 15px;
+		display: block;
+		left: -19px;
+		position: absolute;
+		text-decoration: inherit;
+		top: 5px;
+	}
+}
+
+@media (max-width: 767px) {
+	.toolbar .browse-tags,.toolbar .sort-by{float:left!important}
+	.toolbar label{float:right;margin-left:10px}
+	.toolbar .pull-left{margin-bottom:15px}
+	.tb-right{text-align:center}
+	.tb-right ul{display:inline-block;float:none!important;text-align:center}
+}
+@media (max-width: 500px ) {
+	.prod-detail{clear:both}
+	.breadc .pull-left span{font-size:14px}
+}
+@media (max-width: 991px) {
+	.paginate-left{text-align:center}
+}

@@ -1,0 +1,133 @@
+.star-talk {
+	background-color:#ececec ;
+	padding: 40px 0;
+	position: relative;
+}
+
+.star-talk .star_img_big {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 30%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	opacity: .5
+}
+
+.star-talk .star-talk__title {
+	font-size: 32px;
+	color: #e54243;
+	text-align: right;
+	margin-bottom: 15px
+}
+
+.star-talk .star_img {
+	border-radius: 8px;
+	border: solid 2px #FFF;
+}
+
+.star-talk .tab-content {
+	border: dashed thin #e54243;
+	border-radius: 15px;
+	padding: 15px;
+	height: 280px;
+}
+
+.star-talk .tab_img {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background-position: center;
+	background-position: top;
+	background-size: cover;
+	margin: auto;
+	margin-bottom: 10px;
+	border: solid 2px #dbac69;
+}
+
+.star-talk .nav-tabs {
+	border: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 15px
+}
+.star-talk .nav-tabs>li>a:hover, .star-talk .nav-tabs>li>a:active,.star-talk .nav-tabs>li>a:focus{
+	background: none;
+	background-color: transparent;
+	border: none;
+	transform: scale(1.08);
+	transition: all .5s;
+}
+
+.star-talk .nav-tabs>li>a:active .tab_img,.star-talk .nav-tabs>li>a:focus .tab_img {
+	border: solid 2px #e54243;
+}
+
+.star-talk .nav-tabs>li>a {
+	color: #e54243;
+	border: none;
+	transition: all .5s;
+	background: transparent;
+}
+
+.star-talk .nav-tabs>li>a p {
+	margin-bottom: 0;
+	font-weight: bold;
+}
+
+.star-talk .tab-pane h3, .tab-pane h4 {
+	color: #e54243
+}
+
+.star-talk .tab-pane p {
+	margin-top: 30px;
+	line-height: 23px
+}
+
+@media (max-width: 640px ) {
+	.star-talk__title { font-size: 26px }
+	
+	.star-talk .tab-content { height: auto; }
+
+	.tab-bar {
+		width: 100%;
+		overflow: hidden;
+		overflow-x: auto;
+	}
+
+	.star-talk .tab-bar .nav-tabs {
+		width: 400px
+	}
+
+.star-talk .nav-tabs>li>a {
+	font-size: 12px
+}
+
+.star-talk .tab_img {
+	width: 60px;
+	height: 60px
+}
+	.star-talk .nav-tabs>li>a p{
+		font-size: 12px
+	}
+
+	.star-talk .star-talk__slider>div {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.star-talk .nav-tabs>li>a {
+		opacity: .5
+	}
+
+	.star-talk .nav-tabs>li>a:hover,.star-talk  .nav-tabs>li>a:active,.star-talk .nav-tabs>li>a:focus{
+		opacity: 1
+	}
+
+	.star-talk .tab-active {
+		opacity: 1 !important
+	}
+}
